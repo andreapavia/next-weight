@@ -1,0 +1,9 @@
+.plus {
+    padding: .5rem;
+    font-size: 4rem;
+    cursor: pointer;
+
+    &__svg {
+        color: $hunter-green;
+    }
+}

@@ -1,0 +1,18 @@
+.add-weight {
+    input {
+        width: 50%;
+        border: none;
+        border-bottom: 1px solid $space-cadet;
+        margin-bottom: 10px;
+        outline: none;
+        font-size: 2rem;
+    }
+    button {
+        outline: none;
+        font-size: 2rem;
+        border: 1px solid $cornell-red;
+        background-color: $white;
+        border-radius: 5px;
+        font-family: $rubik;
+    }
+}

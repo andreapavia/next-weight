@@ -1,0 +1,19 @@
+.index {
+    .plus {
+        margin-top: 2rem;
+    }
+}
+
+.weight {
+    span {
+        display: block;
+        width: 100%;
+    }
+
+    &__count {
+        font-family: $comfortaa;
+        font-size: 5rem;
+        font-weight: 300;
+        text-align: center;
+    }
+}

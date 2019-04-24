@@ -9,8 +9,8 @@ class Layout extends React.Component {
     render() {
         return (
             <Fragment>
-                <Head />
-                <div>
+                <Head title={this.props.pageTitle}/>
+                <div className={(this.props.pageClass !== undefined) ? `container ${this.props.pageClass}` : 'container'}>
                     {this.props.children}
                 </div>
             </Fragment>
