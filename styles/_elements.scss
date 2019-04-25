@@ -7,3 +7,13 @@
         color: $hunter-green;
     }
 }
+
+.header {
+    height: $header-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $comfortaa;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px #eaeaea;
+}

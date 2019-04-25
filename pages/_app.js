@@ -1,7 +1,8 @@
 import React from 'react'
 import App, { Container } from 'next/app'
 
-import { Provider } from '../modules/context';
+import { Provider } from '../modules/context'
+import Layout from '../components/layout'
 
 class MyApp extends App {
     state = {
@@ -38,7 +39,9 @@ class MyApp extends App {
         return (
             <Container>
                 <Provider state={this.state} actions={actions}>
-                    <Component {...pageProps} />
+                    <Layout>
+                        <Component {...pageProps} />
+                    </Layout>
                 </Provider>
             </Container>
         )

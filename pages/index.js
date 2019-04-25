@@ -1,18 +1,16 @@
 import Link from 'next/link'
 import { Fragment } from 'react'
 
-import Layout from '../components/layout'
+import Frame from '../components/frame'
 import PlusIcon from '../components/plus-icon'
 import { MainContext } from '../modules/context'
 
 class Index extends React.Component {
     render() {
-        const insertedWeights = 0;
-
         return (
-            <Layout pageTitle='Welcome' pageClass="index">
+            <Frame pageTitle='Welcome' pageClass="index">
                 <MainContext.Consumer>
-                    {({ state, actions }) => {
+                    {({ state }) => {
                         const insertedWeights = state.weights.length
                         return (
                             <Fragment>
@@ -29,7 +27,7 @@ class Index extends React.Component {
                         )
                     }}
                 </MainContext.Consumer>
-            </Layout>
+            </Frame>
             
         )
     }

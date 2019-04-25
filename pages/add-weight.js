@@ -2,14 +2,14 @@ import Link from 'next/link';
 import { Fragment } from 'react';
 
 import { MainContext } from '../modules/context'
-import Layout from '../components/layout'
+import Frame from '../components/frame'
 
 export default  () => {
     return (
        
-        <Layout pageTitle='Add Weight' pageClass="add-weight">
+        <Frame pageTitle='Add Weight' pageClass="add-weight">
             <MainContext.Consumer>
-                {({state, actions}) => {
+                {({ actions }) => {
                     let weight;
                     return (
                         <Fragment>
@@ -23,6 +23,6 @@ export default  () => {
                 
             </MainContext.Consumer>
             
-        </Layout>
+        </Frame>
     )
 }
