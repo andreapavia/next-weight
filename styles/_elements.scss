@@ -1,19 +1,30 @@
-.plus {
+.icon {
     padding: .5rem;
     font-size: 4rem;
     cursor: pointer;
 
-    &__svg {
-        color: $hunter-green;
+    &--plus {
+        .icon__svg {
+            color: $hunter-green;
+        }
     }
 }
 
-.header {
+
+.header, 
+.footer {
     height: $header-height;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header {
     font-family: $comfortaa;
     text-transform: uppercase;
     box-shadow: 0 5px 10px #eaeaea;
+}
+
+.footer {
+    box-shadow: 0 -5px 10px #eaeaea;
 }

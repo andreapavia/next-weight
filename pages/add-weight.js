@@ -16,13 +16,13 @@ export default  () => {
                             <input type="text" ref={node => weight = node} />
                             <button onClick={() => {
                                 actions.handleWeightInsert(weight)
+                                weight.value = ''
                             }}>Insert</button>
                         </Fragment>
                     )
                 }}
                 
             </MainContext.Consumer>
-            
         </Frame>
     )
 }

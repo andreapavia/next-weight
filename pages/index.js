@@ -1,8 +1,6 @@
-import Link from 'next/link'
 import { Fragment } from 'react'
 
 import Frame from '../components/frame'
-import PlusIcon from '../components/plus-icon'
 import { MainContext } from '../modules/context'
 
 class Index extends React.Component {
@@ -20,9 +18,6 @@ class Index extends React.Component {
                                     </span>
                                     <span className="weight__desc">inserted weights</span>
                                 </div>
-                                <Link href="/add-weight">
-                                    <a><PlusIcon /></a>
-                                </Link>
                             </Fragment>
                         )
                     }}
